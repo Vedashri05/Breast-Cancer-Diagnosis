@@ -1,0 +1,18 @@
+.st-emotion-cache-13tbzbm{
+    padding: 1rem;
+    border-radius:0.5rem ;
+    background-color: #748fa1;
+}
+
+.diagnosis{
+    color: whitesmoke;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.diagnosis.benign{
+    background-color: rgb(24, 119, 7);
+}
+.diagnosis.maligant{
+    background-color: rgb(151, 29, 10);
+}
