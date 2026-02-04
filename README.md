@@ -24,9 +24,8 @@ The system demonstrates the complete ML lifecycle:
 - **Model**: Logistic Regression 
 
 The machine learning model was evaluated on a held-out test dataset with the following results:
-
-* Accuracy: `98.2%`
-* Recall: `97.7%`
+> Accuracy: `98.2%`
+> Recall: `97.7%`
 
 - **Preprocessing**: StandardScaler (used during training and inference)
 - **Evaluation Focus**: Recall & False Negatives (important for medical diagnosis)
