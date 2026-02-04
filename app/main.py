@@ -151,7 +151,7 @@ def main():
     input_data=add_sidebar()
 
     with st.container():
-        st.header("Breast cancer Predictior")
+        st.header("Breast cancer Predictor")
         st.write("""
             This application predicts whether a breast tumor is **Benign** or **Malignant**
             using a machine learning model trained on clinical diagnostic features.The model analyzes input features provided by the user and returns a prediction
