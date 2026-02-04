@@ -25,6 +25,7 @@ The system demonstrates the complete ML lifecycle:
 
 The machine learning model was evaluated on a held-out test dataset with the following results:
 > Accuracy: `98.2%`
+
 > Recall: `97.7%`
 
 - **Preprocessing**: StandardScaler (used during training and inference)
@@ -44,10 +45,7 @@ The machine learning model was evaluated on a held-out test dataset with the fol
 
 ## 🕸️ Radar Chart Visualization
 
-The radar chart helps visualize the **feature profile** of the input sample:
-- Mean features
-- Standard Error (SE) features
-- Worst features
+The radar chart helps visualize the **feature profile** of the input sample: Mean, Standard Error(SE), Worst features
 
 Min–Max normalization is applied **only for visualization** to ensure balanced and interpretable radar plots.
 
