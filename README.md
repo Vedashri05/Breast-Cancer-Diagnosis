@@ -72,3 +72,7 @@ Breast-Cancer-Diagnosis/
 ├── requirements.txt 
 └── README.md 
 ```
+
+## Live demo
+The application is deployed online using **Streamlit Community Cloud** and can be accessed at:
+https://breast-cancer-diagnosis-3uf5v6y3nytvwhf7lgcpfn.streamlit.app/
