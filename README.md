@@ -1,4 +1,4 @@
-# 🩺 Breast Cancer Diagnosis Web App
+# Breast Cancer Diagnosis Web App
 
 An end-to-end **Machine Learning + Streamlit** web application that predicts whether a breast tumor is **Benign** or **Malignant** based on clinical diagnostic features.  
 The app also visualizes feature patterns using a **radar chart** and provides a **confidence score** for each prediction.
@@ -19,14 +19,14 @@ The system demonstrates the complete ML lifecycle:
 
 ---
 
-## 🧠 Machine Learning Details
+## Machine Learning Details
 
 - **Model**: Logistic Regression 
 
 The machine learning model was evaluated on a held-out test dataset with the following results:
+> Accuracy score: `98.2%`
 
-* Accuracy: `98%`
-* Recall: `97%`
+> Recall score: `97.7%`
 
 - **Preprocessing**: StandardScaler (used during training and inference)
 - **Evaluation Focus**: Recall & False Negatives (important for medical diagnosis)
@@ -36,26 +36,23 @@ The machine learning model was evaluated on a held-out test dataset with the fol
 
 ## 📊 Features of the Web App
 
-- 🔢 Sidebar inputs for all diagnostic features  
-- 🧪 Real-time prediction (Benign / Malignant) with confidence score    
-- 🕸️ Radar chart visualization (Mean, SE, Worst feature groups)  
-- 🎨 Clean and responsive Streamlit UI  
+- Sidebar inputs for all diagnostic features  
+- Real-time prediction (Benign / Malignant) with confidence score    
+- Radar chart visualization (Mean, SE, Worst feature groups)  
+- Clean and responsive Streamlit UI  
 
 ---
 
 ## 🕸️ Radar Chart Visualization
 
-The radar chart helps visualize the **feature profile** of the input sample:
-- Mean features
-- Standard Error (SE) features
-- Worst features
+The radar chart helps visualize the **feature profile** of the input sample: Mean, Standard Error(SE), Worst features
 
 Min–Max normalization is applied **only for visualization** to ensure balanced and interpretable radar plots.
 
 ---
 
 ## 🗂️ Project Structure
-
+```
 Breast-Cancer-Diagnosis/
 ├── app/
 │ └── main.py # Streamlit application
@@ -74,3 +71,4 @@ Breast-Cancer-Diagnosis/
 │
 ├── requirements.txt 
 └── README.md 
+```
