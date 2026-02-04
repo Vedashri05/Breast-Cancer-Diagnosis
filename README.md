@@ -25,8 +25,8 @@ The system demonstrates the complete ML lifecycle:
 
 The machine learning model was evaluated on a held-out test dataset with the following results:
 
-* Accuracy: `98%`
-* Recall: `97%`
+* Accuracy: `98.2%`
+* Recall: `97.7%`
 
 - **Preprocessing**: StandardScaler (used during training and inference)
 - **Evaluation Focus**: Recall & False Negatives (important for medical diagnosis)
@@ -36,10 +36,10 @@ The machine learning model was evaluated on a held-out test dataset with the fol
 
 ## 📊 Features of the Web App
 
-- 🔢 Sidebar inputs for all diagnostic features  
-- 🧪 Real-time prediction (Benign / Malignant) with confidence score    
-- 🕸️ Radar chart visualization (Mean, SE, Worst feature groups)  
-- 🎨 Clean and responsive Streamlit UI  
+- Sidebar inputs for all diagnostic features  
+- Real-time prediction (Benign / Malignant) with confidence score    
+- Radar chart visualization (Mean, SE, Worst feature groups)  
+- Clean and responsive Streamlit UI  
 
 ---
 
@@ -55,7 +55,7 @@ Min–Max normalization is applied **only for visualization** to ensure balanced
 ---
 
 ## 🗂️ Project Structure
-
+```
 Breast-Cancer-Diagnosis/
 ├── app/
 │ └── main.py # Streamlit application
@@ -74,3 +74,4 @@ Breast-Cancer-Diagnosis/
 │
 ├── requirements.txt 
 └── README.md 
+```
