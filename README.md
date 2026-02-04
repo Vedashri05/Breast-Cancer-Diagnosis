@@ -1,4 +1,4 @@
-# 🩺 Breast Cancer Diagnosis Web App
+# Breast Cancer Diagnosis Web App
 
 An end-to-end **Machine Learning + Streamlit** web application that predicts whether a breast tumor is **Benign** or **Malignant** based on clinical diagnostic features.  
 The app also visualizes feature patterns using a **radar chart** and provides a **confidence score** for each prediction.
@@ -19,14 +19,14 @@ The system demonstrates the complete ML lifecycle:
 
 ---
 
-## 🧠 Machine Learning Details
+## Machine Learning Details
 
 - **Model**: Logistic Regression 
 
 The machine learning model was evaluated on a held-out test dataset with the following results:
-> Accuracy: `98.2%`
+> Accuracy score: `98.2%`
 
-> Recall: `97.7%`
+> Recall score: `97.7%`
 
 - **Preprocessing**: StandardScaler (used during training and inference)
 - **Evaluation Focus**: Recall & False Negatives (important for medical diagnosis)
