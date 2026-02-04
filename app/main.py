@@ -1,14 +1,16 @@
 import joblib
 import pandas as pd
 import streamlit as st
+from pathlib import Path
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 #Load the dataset
-data=pd.read_csv("../data/breast_cancer.csv")
+BASE_DIR = Path(__file__).resolve().parent.parent
+data = pd.read_csv(BASE_DIR / "data" / "breast_cancer.csv")
 
 #Load the ml model
-artifacts=joblib.load("../artifacts/breast-cancer-model2.pkl")
+artifacts = joblib.load(BASE_DIR / "artifacts" / "breast-cancer-model.pkl")
 model=artifacts["model"]
 scaler=artifacts["scaler"]
 features=artifacts["features"]
@@ -143,7 +145,7 @@ def main():
         initial_sidebar_state="expanded"
     )
 
-    with open("../assets/style.css") as f:
+    with open(BASE_DIR/"assets"/"style.css") as f:
         st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
 
     input_data=add_sidebar()
